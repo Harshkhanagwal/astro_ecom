@@ -1,5 +1,6 @@
 import React from 'react'
 import './Card.css'
+import { CardBtn } from './CardBtn/CardBtn'
 
 export const Card = () => {
     return (
@@ -8,8 +9,17 @@ export const Card = () => {
                 <img src="/images/products/mata-rani.jpg" alt="" />
             </div>
             <div className="card-details">
-                <h1>Product</h1>
+                <div className="card-like">
+                    <p>E-pooja Collection</p>
+                </div>
+                <div className="card-title">
+                    <p>Shri Saraswati Pooja</p>
+                </div>
+                <div className="card-price">
+                    <p>$ 999 /-</p>
+                </div>
             </div>
+            <CardBtn />
         </div>
     )
 }
