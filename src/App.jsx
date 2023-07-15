@@ -1,7 +1,13 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+
+//components
 import Home from './pages/Home'
 import Productpage from './pages/Productpage'
+
+//stylesheets
+import './index.css'
+
 
 const App = () => {
     return (
