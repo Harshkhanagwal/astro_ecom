@@ -8,11 +8,11 @@
 }
 
 .accentBackground {
-    background-color: var(--accentColor);
+    background-color: #F5F4F4;
 }
 
 .mainBackground {
-    background-color: var(--primary);
+    background-color: #0F263A;
 }
 
 .main{
@@ -24,5 +24,5 @@
 
 .container{
     display: flex;
-    max-width: 1240px;
+    max-width: 1140px;
 }
