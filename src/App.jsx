@@ -1,10 +1,10 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, BrowserRouter as Router } from 'react-router-dom'
 
 //components
 import Home from './pages/Home'
 import Productpage from './pages/Productpage'
-import {Header} from './Components/header/header'
+import {Header} from './Components/header/Header'
 
 //stylesheets
 import './style.css'
@@ -13,12 +13,14 @@ import './style.css'
 const App = () => {
     return (
         <>
-            <Header />
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/product' element={<Productpage />} />
-                <Route path='*' element={<h1> Error 404 : page not found </h1>} />
-            </Routes>
+            <Router>
+                <Header />
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/product' element={<Productpage />} />
+                    <Route path='*' element={<h1> Error 404 : page not found </h1>} />
+                </Routes>
+            </Router>
         </>
     )
 }
