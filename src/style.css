@@ -15,6 +15,10 @@
     background-color: #0F263A;
 }
 
+.white{
+    color: #fff;
+}
+
 .main{
     display: flex;
     width: 100%;

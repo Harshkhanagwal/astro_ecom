@@ -76,8 +76,11 @@ input:focus {
     height: 24px;
     width: 24px;
     border: 1px solid #fff;
-    font-size: 12px;
+    font-size: 16px;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     background-color: #0F263A;
     transition: ease 0.2s;
@@ -87,3 +90,44 @@ input:focus {
     scale: 1.1;   
 }
 
+.mobilesearchbar{
+    display: none;
+}
+.serachbar-mobile, .serachbar-mobile form{
+ height: 40px;
+ width: 100%;   
+ display: flex;
+ justify-content: center;
+ flex-direction: row;
+ border-bottom: 1px solid #a3a3a3;
+}
+
+.serachbar-mobile input{
+    width: 100%;
+    padding-left: 10px;
+    border: none;
+
+}
+
+.serachbar-mobile input:focus{
+    border-bottom: 1px #0F263A solid;
+}
+
+.mobile-searchbt{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #0F263A;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width : 718px) {
+    .searchBar{
+        display: none;
+    }
+
+    .mobilesearchbar{
+        display: block;
+    }
+}
