@@ -21,3 +21,14 @@
     background-color: var(--primary);
 }
 
+.main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    max-width: 1240px;
+}
