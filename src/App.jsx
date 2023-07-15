@@ -7,7 +7,7 @@ const App = () => {
     return (
         <Routes>
             <Route path='/' element={<Home/>} />
-            <Route path='/' element={<Productpage/>} />
+            <Route path='/product' element={<Productpage/>} />
             <Route path='*' element={<h1> Error 404 : page not found </h1>} />
         </Routes>
     )
