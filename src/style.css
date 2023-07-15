@@ -7,12 +7,6 @@
     font-family: 'Ysabeau Infant', sans-serif;
 }
 
-.root{
-    --primary : #0F263A;
-    --accentColor : #FF850B;
-    --secBackground : #F5F4F4;   
-}
-
 .accentBackground {
     background-color: var(--accentColor);
 }
