@@ -3,6 +3,7 @@ import './header.css'
 import Saerchbar from './HeaderSearchBar/Saerchbar'
 import Headerbt from './headerBts/Headerbt'
 import { AiOutlineSearch } from 'react-icons/ai';
+import { NavLink } from 'react-router-dom';
 
 export const Header = () => {
   return (
@@ -10,7 +11,9 @@ export const Header = () => {
       <header className='main mainBackground'>
         <div className="container innerHeader">
           <div className="logo-area">
-            <img src="/images/logo.png" alt="logo" height={50} />
+            <NavLink to={'/'}>
+              <img src="/images/logo.png" alt="logo" height={50} />
+            </NavLink>
           </div>
           <div className="searchBar">
             <Saerchbar />
