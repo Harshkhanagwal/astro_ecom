@@ -1,0 +1,43 @@
+.Navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: .0625rem solid lightgray;
+    height: 40px;
+    padding: 25px 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    /* gap: 16px; */
+}
+
+nav ul li {
+    opacity: 0.8;
+    cursor: pointer;
+    margin: 0 16px;
+    padding: 8px 0;
+    list-style: none;
+    transition: all 0.45s ease;
+    font-size: 1rem;
+    position: relative;
+}
+
+nav ul li::before {
+    content: "";
+    position: absolute;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 0;
+    border-bottom: 3px solid #0F263A;
+    height: 100%;
+    transition: all 0.45s ease;
+}
+
+nav ul li:hover::before {
+    width: 100%;
+    opacity: 1;
+}
